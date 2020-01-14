@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Contatos"),
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.lightGreen[300],
         centerTitle: true,
         actions: <Widget>[
           PopupMenuButton<OrderOptions>(
@@ -48,13 +48,13 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey[300],
       floatingActionButton: FloatingActionButton(
           onPressed: (){
             _showContactPage();
           },
           child: Icon(Icons.add),
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.lightGreen[300],
       ),
       body: ListView.builder(
           padding: EdgeInsets.all(10.0),
@@ -130,7 +130,7 @@ class _HomePageState extends State<HomePage> {
                       padding: EdgeInsets.all(10.0),
                       child: FlatButton(
                         child: Text("Ligar",
-                          style: TextStyle(color: Colors.red, fontSize: 20.0),
+                          style: TextStyle(color: Colors.lightGreen[300], fontSize: 20.0),
                         ),
                         onPressed: (){
                           launch("tel:${contacts[index].phone}");
@@ -142,7 +142,7 @@ class _HomePageState extends State<HomePage> {
                       padding: EdgeInsets.all(10.0),
                       child: FlatButton(
                         child: Text("Editar",
-                          style: TextStyle(color: Colors.red, fontSize: 20.0),
+                          style: TextStyle(color: Colors.lightGreen[300], fontSize: 20.0),
                         ),
                         onPressed: (){
                           Navigator.pop(context);
@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                       padding: EdgeInsets.all(10.0),
                       child: FlatButton(
                         child: Text("Excluir",
-                          style: TextStyle(color: Colors.red, fontSize: 20.0),
+                          style: TextStyle(color: Colors.lightGreen[300], fontSize: 20.0),
                         ),
                         onPressed: (){
                           helper.deleteContact(contacts[index].id);
