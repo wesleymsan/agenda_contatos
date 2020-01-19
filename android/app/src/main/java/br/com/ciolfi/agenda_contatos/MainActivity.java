@@ -1,4 +1,4 @@
-package br.com.ciolfi.agenda_contatos;
+package br.com.wesley.agenda_contatos;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
